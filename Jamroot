@@ -1,0 +1,9 @@
+
+use-project boost : ../../boost_1_62_0 ;
+
+project dmss : default-build <link>static ;
+
+exe dmss : main.cpp /boost//system : <cxxflags>-std=c++1y ;
+
+stage stage : dmss ;
+
